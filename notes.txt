@@ -1,0 +1,59 @@
+liste des scenarios probables :
+-athome
+-atjob
+-leavehome
+-leavejob
+-mute
+-versailles
+-startday
+-reveil
+-endday
+-goodnight
+-weekend
+-manuel/auto mode
+
+liste des plugins probables :
+-chacon
+-zwaves
+-lirc
+-xbmc
+-philips
+-sarah
+-meteo
+-actualité
+-wikipedia
+-api recherche resto et autres
+-notification
+-prise de note/rappel (utiliser sarah pour le vocal)
+
+liste des actions possibles depuis l'interface web et/ou mobile
+-insert device
+-update device
+-liste device/plugin/scenarios
+-remove device
+-upload scenarios/plugin
+-delete scenarios/plugin
+-changer etat d'un device, mode serveur...
+-consulter la liste des routes
+
+liste des fonctionnalitées de base du serveur nodejs
+-auto configuration app mobile
+-auto ouverture de port sur la box
+-outils pour les dates
+-dao/service implementé pour l'ensemble des tables et des actions possibles
+-notification
+-connexion à l'app mobile pour determiner quelle est l'heure du reveil
+-execution de scenarios
+-execution de plugin
+-ajouter une tache d'appel scenario dans la cron tab de l'host
+
+base de données
+-table device (detail d'un device avec son protocole, son nom, l'endroit ou il se situe)
+-table device_state (etat on/off d'un device et le mode de fonctionnement auto/manuel)
+-table piece (liste des pieces de la maison)
+-table presence (stocker ou se situe le proprietaire)
+-table parameter (clé valeur pour stocker des infos statics ip sarah, clé gcm notif...)
+-table modules
+-table scenarios
+-table cron ?
+-table routeur
